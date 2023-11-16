@@ -107,26 +107,28 @@
   </div>
 </div>
             <!-- ====== Chart One End -->
-            <script>
-             document.addEventListener("DOMContentLoaded", function() {
-    const selectElement = document.getElementById("sentidoSelect");
-    const imagemErAuto = document.getElementById("imagemErAuto");
 
-    selectElement.addEventListener("change", function(event) {
-      const selectedValue = event.target.value;
-
-
-      if (selectedValue == "erAutoGeral") {
-        imagemErAuto.src = "src/images/Graficos/ER/erAutoGeral.png";
-      } else if (selectedValue == "erAutoSP") {
-        imagemErAuto.src = "src/images/Graficos/ER/erAutoSP.png";
-      } else if (selectedValue == "erAutoMG") {
-        imagemErAuto.src = "src/images/Graficos/ER/erAutoMG.png";
-      }
-    });
-  });
-            </script>
             <!-- ====== Eixo Radial Automoveis -->
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+     const selectElement = document.getElementById("erAutoSelect");
+     const imagemErAuto = document.getElementById("imagemErAuto");
+ 
+     selectElement.addEventListener("change", function(event) {
+       const selectedValue = event.target.value;
+ 
+ 
+       if (selectedValue == "erAutoGeral") {
+         imagemErAuto.src = "src/images/Graficos/ER/erAutoGeral.png";
+       } else if (selectedValue == "erAutoSP") {
+         imagemErAuto.src = "src/images/Graficos/ER/erAutoSP.png";
+       } else if (selectedValue == "erAutoMG") {
+         imagemErAuto.src = "src/images/Graficos/ER/erAutoMG.png";
+       }
+     });
+   });
+             </script>
+
             <div
   class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
   <div class="mb-4 justify-between gap-4 sm:flex">
@@ -137,7 +139,7 @@
     </div>
     <div>
       <div class="relative z-20 inline-block">
-        <select name="#" id="sentidoSelect"
+        <select name="#" id="erAutoSelect"
           class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
           <option value="erAutoGeral">Geral</option>
           <option value="erAutoSP">SP</option>
@@ -158,12 +160,35 @@
   </div>
 
   <div>
+    <img src = "images/Graficos/ER/erAutoMG.png"  width="0">
+    <img src = "images/Graficos/ER/erAutoSP.png"  width="0">
     <img src = "images/Graficos/ER/erAutoGeral.png" id="imagemErAuto">
   </div>
 </div>
 <!-- ====== Fim Eixo Radial Automoveis -->
 
 <!-- ====== Eixo Radial Motos -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+const selectElement = document.getElementById("erMotoSelect");
+const imagemErMoto = document.getElementById("imagemErMoto");
+
+selectElement.addEventListener("change", function(event) {
+const selectedValue = event.target.value;
+
+
+if (selectedValue == "erMotoGeral") {
+imagemErMoto .src = "src/images/Graficos/ER/erMotoGeral.png";
+} else if (selectedValue == "erMotoSP") {
+imagemErMoto .src = "src/images/Graficos/ER/erMotoSP.png";
+} else if (selectedValue == "erMotoMG") {
+imagemErMoto .src = "src/images/Graficos/ER/erMotoMG.png";
+}
+});
+});
+ </script>
+
+
             <div
   class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
   <div class="mb-4 justify-between gap-4 sm:flex">
@@ -174,11 +199,11 @@
     </div>
     <div>
       <div class="relative z-20 inline-block">
-        <select name="#" id="#"
+        <select name="#" id="erMotoSelect"
           class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
-          <option value="">Geral</option>
-          <option value="">SP</option>
-          <option value="">MG</option>
+          <option value="erMotoGeral">Geral</option>
+          <option value="erMotoSP">SP</option>
+          <option value="erMotoMG">MG</option>
         </select>
         <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,12 +220,34 @@
   </div>
 
   <div>
-    <img src = "images/Graficos/ER/erMotoGeral.png">
+    <img src = "images/Graficos/ER/erMotoMG.png"  width="0">
+    <img src = "images/Graficos/ER/erMotoSP.png"  width="0">
+    <img src = "images/Graficos/ER/erMotoGeral.png" id="imagemErMoto">
   </div>
 </div>
 <!-- ====== Fim Eixo Radial Motos -->
 
 <!-- ====== Eixo Radial Caminhões -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+const selectElement = document.getElementById("erTruckSelect");
+const imagemErMoto = document.getElementById("imagemErTruck");
+
+selectElement.addEventListener("change", function(event) {
+const selectedValue = event.target.value;
+
+
+if (selectedValue == "erTruckGeral") {
+imagemErMoto .src = "src/images/Graficos/ER/erTruckGeral.png";
+} else if (selectedValue == "erTruckSP") {
+imagemErMoto .src = "src/images/Graficos/ER/erTruckSP.png";
+} else if (selectedValue == "erTruckMG") {
+imagemErMoto .src = "src/images/Graficos/ER/erTruckMG.png";
+}
+});
+});
+ </script>
+
 <div
 class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
 <div class="mb-4 justify-between gap-4 sm:flex">
@@ -211,11 +258,11 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
   </div>
   <div>
     <div class="relative z-20 inline-block">
-      <select name="#" id="#"
+      <select name="#" id="erTruckSelect"
         class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
-        <option value="">Geral</option>
-        <option value="">SP</option>
-        <option value="">MG</option>
+        <option value="erTruckGeral">Geral</option>
+        <option value="erTruckSP">SP</option>
+        <option value="erTruckMG">MG</option>
       </select>
       <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +279,9 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
 </div>
 
 <div>
-  <img src = "images/Graficos/ER/erTruckGeral.png">
+  <img src = "images/Graficos/ER/erTruckMG.png"  width="0">
+    <img src = "images/Graficos/ER/erTruckSP.png"  width="0">
+  <img src = "images/Graficos/ER/erTruckGeral.png" id = "imagemErTruck">
 </div>
 </div>
 <!-- ====== Fim Eixo Radial Caminhões -->
@@ -275,6 +324,25 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
 <!-- ====== Fim Acidentes Estado Geral -->
 
 <!-- ====== Sentido Geral-->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+const selectElement = document.getElementById("sentidoSelect");
+const imagemErMoto = document.getElementById("imagemSentido");
+
+selectElement.addEventListener("change", function(event) {
+const selectedValue = event.target.value;
+
+
+if (selectedValue == "sentidoGeral") {
+imagemErMoto .src = "src/images/Graficos/Acidentes pSentido.png";
+} else if (selectedValue == "sentidoSul") {
+imagemErMoto .src = "src/images/Graficos/Acidentes Sul.png";
+} else if (selectedValue == "sentidoNorte") {
+imagemErMoto .src = "src/images/Graficos/Acidentes Norte.png";
+}
+});
+});
+ </script>
 <div
 class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6">
 <div class="mb-4 justify-between gap-4 sm:flex">
@@ -285,11 +353,11 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
   </div>
   <div>
     <div class="relative z-20 inline-block">
-      <select name="#" id="#"
+      <select name="#" id="sentidoSelect"
         class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
-        <option value="">Geral</option>
-        <option value="">Sul</option>
-        <option value="">Norte</option>
+        <option value="sentidoGeral">Geral</option>
+        <option value="sentidoSul">Sul</option>
+        <option value="sentidoNorte">Norte</option>
       </select>
       <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,7 +374,9 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
 </div>
 
 <div>
-  <img src = "images/Graficos/Acidentes pSentido.png">
+  <img src = "images/Graficos/Acidentes Norte.png"  width="0">
+    <img src = "images/Graficos/Acidentes Sul.png"  width="0">
+  <img src = "images/Graficos/Acidentes pSentido.png" id="imagemSentido">
 </div>
 </div>
 <!-- ====== Fim Sentido Geral -->
