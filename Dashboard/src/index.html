@@ -1,0 +1,121 @@
+<!-- Dashboard VIS Health Focused on Health Care for the Fight Against SARS-COV-2 COVID-19
+  Autor: Ricardo Conde Camillo da Silva -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<!-- <title>Smoothed D3.js Radar Chart</title> -->
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+<meta charset="utf-8">
+<link href="estilo.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <div class="radarChart"></div>
+    <script src="radarChart.js"></script>	
+   
+    <svg width="1280" height="720">
+  
+  <g>
+    <line x1="8" y1="10" x2="1272" y2="10"
+        style="stroke:black;stroke-width:4px;"/>
+
+     <line x1="298" y1="184" x2="983" y2="184"
+        style="stroke:gray;stroke-width:2px;"/> 
+
+    <line x1="450" y1="565" x2="825" y2="565"
+        style="stroke:gray;stroke-width:2px;"/>
+
+    <line x1="10" y1="10" x2="10" y2="405"
+        style="stroke:black;stroke-width:4px;"/>
+
+    <line x1="230" y1="750" x2="10" y2="400"
+        style="stroke:black;stroke-width:4px;"/>
+
+    <line x1="450" y1="565" x2="300" y2="394"
+        style="stroke:gray;stroke-width:2px;"/>
+    
+    <line x1="450" y1="765" x2="450" y2="564"
+        style="stroke:gray;stroke-width:2px;"/>
+    
+        <line x1="824" y1="765" x2="824" y2="564"
+        style="stroke:gray;stroke-width:2px;"/>
+
+    <line x1="822" y1="565" x2="982" y2="394"
+        style="stroke:gray;stroke-width:2px;"/>
+
+    <line x1="300" y1="30" x2="300" y2="394"
+        style="stroke:gray;stroke-width:2px;"/>
+    
+      <line x1="634" y1="30" x2="634" y2="184"
+        style="stroke:gray;stroke-width:2px;"/>
+
+    <line x1="980" y1="30" x2="982" y2="394"
+        style="stroke:gray;stroke-width:2px;"/>
+
+    <line x1="210" y1="718" x2="1060" y2="718"
+        style="stroke:black;stroke-width:4px;"/>
+
+    <line x1="1040" y1="750" x2="1270" y2="400"
+        style="stroke:black;stroke-width:4px;"/>
+
+    <line x1="1270" y1="10" x2="1270" y2="400"
+        style="stroke:black;stroke-width:4px;"/>
+  </g>
+  
+</svg>
+  <footer>
+    <!-- Meus scripts -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="script.js"></script>
+	
+    <script src="radarChart.js"></script>
+    
+    <!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<div class="radarChart"></div>
+
+<!-- A bit of style -->
+<style>
+.axis {
+  opacity: 0.4;
+}
+.axis:hover {
+  opacity: 1;
+}
+
+
+body {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 11px;
+				font-weight: 300;
+				fill: #242424;
+				text-align: center;
+				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+				cursor: default;
+			}
+			
+			.legend {
+				font-family: 'Raleway', sans-serif;
+				fill: #333333;
+			}
+			
+			.tooltip {
+				fill: #333333;
+			}
+</style>
+  </footer>
+</body>
+</html>
+
