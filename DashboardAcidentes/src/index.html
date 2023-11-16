@@ -107,7 +107,25 @@
   </div>
 </div>
             <!-- ====== Chart One End -->
-        
+            <script>
+             document.addEventListener("DOMContentLoaded", function() {
+    const selectElement = document.getElementById("sentidoSelect");
+    const imagemErAuto = document.getElementById("imagemErAuto");
+
+    selectElement.addEventListener("change", function(event) {
+      const selectedValue = event.target.value;
+
+
+      if (selectedValue == "erAutoGeral") {
+        imagemErAuto.src = "src/images/Graficos/ER/erAutoGeral.png";
+      } else if (selectedValue == "erAutoSP") {
+        imagemErAuto.src = "src/images/Graficos/ER/erAutoSP.png";
+      } else if (selectedValue == "erAutoMG") {
+        imagemErAuto.src = "src/images/Graficos/ER/erAutoMG.png";
+      }
+    });
+  });
+            </script>
             <!-- ====== Eixo Radial Automoveis -->
             <div
   class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
@@ -119,11 +137,11 @@
     </div>
     <div>
       <div class="relative z-20 inline-block">
-        <select name="#" id="#"
+        <select name="#" id="sentidoSelect"
           class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
-          <option value="">Geral</option>
-          <option value="">SP</option>
-          <option value="">MG</option>
+          <option value="erAutoGeral">Geral</option>
+          <option value="erAutoSP">SP</option>
+          <option value="erAutoMG">MG</option>
         </select>
         <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +158,7 @@
   </div>
 
   <div>
-    <img src = "images/Graficos/ER/erAutoGeral.png">
+    <img src = "images/Graficos/ER/erAutoGeral.png" id="imagemErAuto">
   </div>
 </div>
 <!-- ====== Fim Eixo Radial Automoveis -->
@@ -270,8 +288,8 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
       <select name="#" id="#"
         class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
         <option value="">Geral</option>
-        <option value="">SP</option>
-        <option value="">MG</option>
+        <option value="">Sul</option>
+        <option value="">Norte</option>
       </select>
       <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
