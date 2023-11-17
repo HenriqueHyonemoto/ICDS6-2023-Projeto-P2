@@ -38,7 +38,7 @@
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-2 2xl:gap-7.5">
             <!-- Card Item Start -->
             <div class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
-              <h1 style="color:white">Grafico 1</h1>
+              <h1 style="color:black">Número de Acidentes por Hora</h1>
               <div class="mt-4 flex items-end justify-between">
                 <img src = "images/Graficos/Segmento das Horas.png">
               </div>
@@ -47,7 +47,7 @@
 
             <!-- Card Item Start -->
             <div class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
-              <h1 style="color:white">Grafico 2</h1>
+              <h1 style="color:black">Número de Acidentes por Ano</h1>
               <div class="mt-4 flex items-end justify-between">
                 <img src = "images/Graficos/Segmento dos Anos.png">
               </div>
@@ -171,7 +171,7 @@
           <span class="block h-2.5 w-full max-w-2.5 rounded-full bg-primary"></span>
         </span>
         <div class="w-full">
-          <p class="font-semibold text-primary">Datas Registradas</p>
+          <p class="font-semibold text-primary">Período de Registro</p>
           <p class="text-sm font-medium">2010 - 2023</p>
         </div>
       </div>
@@ -181,7 +181,7 @@
           <span class="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"></span>
         </span>
         <div class="w-full">
-          <p class="font-semibold text-secondary">Número de Ocorrencias</p>
+          <p class="font-semibold text-secondary">Nº de Ocorrencias</p>
           <p class="text-sm font-medium">108.497</p>
         </div>
       </div>
@@ -351,11 +351,11 @@
    });
              </script>
 
-            <div
+            <div style = "background-color: #2c2f36;"
   class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-  <div class="mb-4 justify-between gap-4 sm:flex">
+  <div class="mb-4 justify-between gap-4 sm:flex" >
     <div>
-      <h4 class="text-xl font-bold text-black dark:text-white">
+      <h4 class="text-xl font-bold text-black dark:text-white" style ="color:white">
         Acidentes Mais Comuns em Automoveis
       </h4>
     </div>
@@ -411,11 +411,11 @@ imagemErMoto .src = "src/images/Graficos/ER/erMotoMG.png";
  </script>
 
 
-            <div
+            <div style = "background-color: #2c2f36;"
   class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
   <div class="mb-4 justify-between gap-4 sm:flex">
     <div>
-      <h4 class="text-xl font-bold text-black dark:text-white">
+      <h4 class="text-xl font-bold text-black dark:text-white" style ="color:white">
         Acidentes Mais Comuns em Motos
       </h4>
     </div>
@@ -470,17 +470,17 @@ imagemErMoto .src = "src/images/Graficos/ER/erTruckMG.png";
 });
  </script>
 
-<div
+<div style="background-color: #2c2f36;"
 class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
 <div class="mb-4 justify-between gap-4 sm:flex">
   <div>
-    <h4 class="text-xl font-bold text-black dark:text-white">
+    <h4 class="text-xl font-bold text-black dark:text-white" style ="color:white">
       Acidentes Mais Comuns em Caminhão
     </h4>
   </div>
   <div>
     <div class="relative z-20 inline-block">
-      <select name="#" id="erTruckSelect"
+      <select name="#" id="erTruckSelect" 
         class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none">
         <option value="erTruckGeral">Geral</option>
         <option value="erTruckSP">SP</option>
@@ -606,128 +606,191 @@ class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default
 
         
             <!-- ====== Table One Start -->
+
             <div class="col-span-12 xl:col-span-8">
-              <include src="./partials/table-01.html" />
+              
+              <div
+              class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+              <h4 class="mb-6 text-xl font-bold text-black dark:text-white">
+                Ferramentas Utilizadas
+              </h4>
+            
+              <div class="flex flex-col">
+                <div class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-3">
+                  <div class="p-2.5 xl:p-5">
+                    <h5 class="text-sm font-medium uppercase xsm:text-base">Source</h5>
+                  </div>
+                  <div class="p-2.5 text-center xl:p-5">
+                    <h5 class="text-sm font-medium uppercase xsm:text-base">Uso</h5>
+                  </div>
+                  <div class="p-2.5 text-center xl:p-5">
+                    <h5 class="text-sm font-medium uppercase xsm:text-base">Referencia</h5>
+                  </div>
+                </div>
+            
+                <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-3">
+                  <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <div class="flex-shrink-0">
+                      <img src="./images/Logos/TailAdmin.png" alt="Brand" width="50px"/>
+                    </div>
+                    <p class="hidden font-medium text-black dark:text-white sm:block">
+                      TailAdmin
+                    </p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <p class="font-medium text-black dark:text-white">Template do Dashboard</p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <a href="https://github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template">
+                    <p class="font-medium text-meta-3" >wuletawwonte</p>
+                  </a>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-3">
+                  <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <div class="flex-shrink-0">
+                      <img src="./images/Logos/Python.png" alt="Brand" width="50px"/>
+                    </div>
+                    <p class="hidden font-medium text-black dark:text-white sm:block">
+                      Python
+                    </p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    
+                    <p class="font-medium text-black dark:text-white">Linguagem de Programação e Gerenciador das Bibliotecas</p>
+
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <a href="https://www.python.org">
+                    <p class="font-medium text-meta-3">python.org</p>
+                  </a>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-3">
+                  <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <div class="flex-shrink-0">
+                      <img src="./images/Logos/pandas.png" alt="Brand" width="50px"/>
+                    </div>
+                    <p class="hidden font-medium text-black dark:text-white sm:block">
+                      Pandas
+                    </p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    
+                    <p class="font-medium text-black dark:text-white">Biblioteca para Gerenciamento de Dados Estruturais</p>
+
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <a href="https://pandas.pydata.org">
+                    <p class="font-medium text-meta-3">pandas.pydata.org</p>
+                  </a>
+                  </div>
+                </div>
+
+                
+            
+
+                <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-3">
+                  <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <div class="flex-shrink-0">
+                      <img src="./images/Logos/plotly.webp" alt="Brand" width="50px"/>
+                    </div>
+                    <p class="hidden font-medium text-black dark:text-white sm:block">
+                      Plotly
+                    </p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    
+                    <p class="font-medium text-black dark:text-white">Biblioteca para Criação de Gráficos e Visualizações</p>
+
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <a href="https://plotly.com">
+                    <p class="font-medium text-meta-3">plotly.com</p>
+                  </a>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-3">
+                  <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <div class="flex-shrink-0">
+                      <img src="./images/Logos/Jupyter.png" alt="Brand" width="50px"/>
+                    </div>
+                    <p class="hidden font-medium text-black dark:text-white sm:block">
+                      Jupyter Notebook
+                    </p>
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    
+                    <p class="font-medium text-black dark:text-white">Normalização/Adaptação/Exploração dos Dados</p>
+
+                  </div>
+            
+                  <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <a href="https://jupyter.org">
+                    <p class="font-medium text-meta-3">jupyter.org</p>
+                  </a>
+                  </div>
+                </div>
+
+                
+               
+              
+              </div>
             </div>
+
+
+            </div>
+
+
             <!-- ====== Table One End -->
         
-            <!-- ====== Chat Card Start -->
-            <div
+            <!-- ====== Noticias -->
+            
+            <div style="background-color: #202124;"
               class="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
-              <h4 class="mb-6 px-7.5 text-xl font-bold text-black dark:text-white">
-                Chats
+              <h4 class="mb-6 px-7.5 text-xl font-bold text-black dark:text-white" style = "color:white">
+                Noticias Recentes
               </h4>
         
               <div>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-03.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
-                  </div>
-        
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium text-black dark:text-white">
-                        Devid Heilo
-                      </h5>
-                      <p>
-                        <span class="text-sm font-medium text-black dark:text-white">Hello, how are you?</span>
-                        <span class="text-xs"> . 12 min</span>
-                      </p>
-                    </div>
-                    <div class="flex h-6 w-6 items-center justify-center rounded-full bg-primary">
-                      <span class="text-sm font-medium text-white">3</span>
-                    </div>
-                  </div>
+                <a href="https://g1.globo.com/mg/sul-de-minas/noticia/2023/11/10/acidentes-fim-de-semana-entre-10-e-12-de-novembro-no-sul-de-minas.ghtml" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
+                  <img width="400px" src="./images/Noticias/n1.jpg">
                 </a>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-04.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
-                  </div>
-        
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium">Henry Fisher</h5>
-                      <p>
-                        <span class="text-sm font-medium">I am waiting for you</span>
-                        <span class="text-xs"> . 5:54 PM</span>
-                      </p>
-                    </div>
-                  </div>
+                <a href="https://brumadinho.portaldacidade.com/noticias/policial/veiculo-capota-na-rodovia-fernao-dias-proximo-a-sao-joaquim-de-bicas-0019" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
+                  <img width="400px" src="./images/Noticias/n2.jpg">
                 </a>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-05.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"></span>
-                  </div>
-        
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium">Wilium Smith</h5>
-                      <p>
-                        <span class="text-sm font-medium">Where are you now?</span>
-                        <span class="text-xs"> . 10:12 PM</span>
-                      </p>
-                    </div>
-                  </div>
+                <a href="https://terradomandu.com.br/index.php/2023/11/12/carreta-com-placas-solares-tomba-e-interdita-fernao-dias-em-cambui/" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
+                  <img width="400px" src="./images/Noticias/n3.jpg">
                 </a>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-01.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
-                  </div>
-        
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium text-black dark:text-white">
-                        Henry Deco
-                      </h5>
-                      <p>
-                        <span class="text-sm font-medium text-black dark:text-white">Thank you so much!</span>
-                        <span class="text-xs"> . Sun</span>
-                      </p>
-                    </div>
-                    <div class="flex h-6 w-6 items-center justify-center rounded-full bg-primary">
-                      <span class="text-sm font-medium text-white">2</span>
-                    </div>
-                  </div>
+                <a href="https://pousoalegre.portaldacidade.com/noticias/policial/cavalo-mecanico-volvo-atropela-caminhao-bau-carregado-com-frangos-na-fernao-dias-1701" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
+                  <img width="400px" src="./images/Noticias/n4.jpg">
                 </a>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-02.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-7"></span>
-                  </div>
+                <!--<a href="https://diariodotransporte.com.br/2023/11/10/caminhao-tomba-no-km-67-da-rodovia-fernao-dias-e-causa-congestionamento-de-16-quilometros-nesta-sexta-feira-10/" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
+                  <img width="400px" src="./images/Noticias/n5.jpg">
+                </a>-->
+
+
         
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium">Jubin Jack</h5>
-                      <p>
-                        <span class="text-sm font-medium">I really love that!</span>
-                        <span class="text-xs"> . Oct 23</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <a href="messages.html" class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4">
-                  <div class="relative h-14 w-14 rounded-full">
-                    <img src="./images/user/user-05.png" alt="User" />
-                    <span class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"></span>
-                  </div>
-        
-                  <div class="flex flex-1 items-center justify-between">
-                    <div>
-                      <h5 class="font-medium">Wilium Smith</h5>
-                      <p>
-                        <span class="text-sm font-medium">Where are you now?</span>
-                        <span class="text-xs"> . Sep 20</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
+          
               </div>
             </div>
-            <!-- ====== Chat Card End -->
+
+
+          
+
+            <!-- ====== Noticias End -->
           </div>
         </div>
       </main>
